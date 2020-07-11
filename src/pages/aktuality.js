@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
+import { ArrowsAngleExpand, ArrowsAngleContract } from 'react-bootstrap-icons';
 import htmlParse from 'html-react-parser';
 import clsx from 'clsx';
 
@@ -81,7 +82,8 @@ class Images extends React.Component {
 
         this.state = {
             images: [],
-            showMoreImagesButton: this.props.images.length > 3
+            showMoreImagesButton: this.props.images.length > 3,
+            expanded: false,
         }
 
         this.loadAllImages = this.loadAllImages.bind(this);
@@ -92,8 +94,8 @@ class Images extends React.Component {
     }
     loadAllImages(){
         this.setState({
-            showMoreImagesButton: false,
-            images: this.props.images
+            expanded: !this.state.expanded,
+            images: this.state.images.length > 3 ? this.props.images.slice(0, 3) : this.props.images
         });
         
     }
@@ -102,7 +104,6 @@ class Images extends React.Component {
             "thumb-max mx-auto d-block" && this.props.images.length === 1,
             "thumb" && this.props.images.length > 1
         );
-        console.log(imageClasses);
         let images = this.state.images.map(img => {
             return (
                 <a data-fancybox="gallery" href={img.url}>
@@ -113,7 +114,7 @@ class Images extends React.Component {
         if (!images){
             return "";
         }
-        images.push(this.state.showMoreImagesButton && <Button onClick={this.loadAllImages}>Více obrázků</Button>);
+    images.push(this.state.showMoreImagesButton && <><br/><Button className={'expandGalleryButton'} onClick={this.loadAllImages} >{this.state.expanded ? (<>Méně obrázků <ArrowsAngleContract/></>)  : (<>Více obrázků <ArrowsAngleExpand/></>)}</Button></>);
         return images;
     }
 }

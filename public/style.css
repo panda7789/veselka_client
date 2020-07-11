@@ -112,6 +112,10 @@
 	color: #0056b3;
     text-decoration: underline;
 }
+.expandGalleryButton {
+	float: right;
+	margin: 20px;
+}
 
  @media (min-width: 576px) { 
 	.enjoy-css{

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
 import { ArrowsAngleExpand, ArrowsAngleContract } from 'react-bootstrap-icons';
 import htmlParse from 'html-react-parser';
-import clsx from 'clsx';
 
 var api_url = process.env.REACT_APP_API_URL;
 
@@ -28,15 +27,14 @@ export class Aktuality extends Component {
             <>
                 <Col sm={8}>
                     <div className="content">
-                        <h3 class={"display-4"}>Aktuality</h3>
-                        <br></br>
+                        <h3 className={"display-4"}>Aktuality</h3>
                         {
-                            this.state.aktuality && this.state.aktuality.map(x => { return <Aktualita title={x.title} text={x.text} images={x.images} /> })
+                            this.state.aktuality && this.state.aktuality.map(x => { return <Aktualita key={x.title} title={x.title} text={x.text} images={x.images} /> })
                         }
                     </div>
                 </Col>
                 <Col sm={4}>
-                    <div class="right">
+                    <div className="right">
                         <iframe
                             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLo%25C5%25A1tick%25C3%25A1-Veselka-111782970262375%2F&tabs=timeline%2Cevents&width=340&height=900&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1606107826281502"
                             style={{ border: 'none', overflow: 'hidden' }}
@@ -44,8 +42,8 @@ export class Aktuality extends Component {
                             height="1000px"
                             width="340"
                             scrolling="no"
-                            frameborder="0"
-                            allowTransparency="true"
+                            frameBorder="0"
+                            title="facebook"
                             allow="encrypted-media">
                         </iframe>
                     </div>
@@ -60,14 +58,14 @@ class Aktualita extends Component {
         return (
             <Row>
                 <Col sm={12} className={"article"}>
-                    <div class="article-header">
+                    <div className="article-header">
                         <h3>{this.props.title}</h3>
                         <hr />
                     </div>
-                    <div class="article-content">
+                    <div className="article-content">
                         <p>{htmlParse(this.props.text)}</p>
                     </div>
-                    <div class="article-images">
+                    <div className="article-images">
                         <Images images={this.props.images} />
                     </div>
                 </Col>
@@ -100,14 +98,10 @@ class Images extends React.Component {
         
     }
     render() {
-        const imageClasses = clsx(
-            "thumb-max mx-auto d-block" && this.props.images.length === 1,
-            "thumb" && this.props.images.length > 1
-        );
         let images = this.state.images.map(img => {
             return (
-                <a data-fancybox="gallery" href={img.url}>
-                    <img className={this.props.images.length > 1 ? "thumb" : "thumb-max mx-auto d-block"} src={img.urlThumbnail} />
+                <a data-fancybox="gallery" href={img.url} key={img.url}>
+                    <img className={this.props.images.length > 1 ? "thumb" : "thumb-max mx-auto d-block"} src={img.urlThumbnail} alt={img.id} />
                 </a>
             )
         });

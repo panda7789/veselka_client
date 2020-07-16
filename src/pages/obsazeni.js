@@ -10,14 +10,14 @@ export default function Obsazeni() {
         <h3 class={"display-4"}>Obsazení</h3>
         <br></br>
         <Accordion onSelect={e => setActiveKey(e)} defaultActiveKey={0}>
-          <CardCollapse title='Zpěvy' names={['Soňa Rifflerová','Markéta Tichá','Pavel Braun']} id={0} activeKey={activeKey} />
-          <CardCollapse title='Křídlovky' names={['Milan Novák','Pavel Braun','Tomáš Braun','Jiří Šimek']} id={1} activeKey={activeKey} />
-          <CardCollapse title='Tenor' names={['Jaroslava Jašková']} id={2} activeKey={activeKey} />
-          <CardCollapse title='Baryton' names={['Stanislav Veselý']} id={3} activeKey={activeKey} />
-          <CardCollapse title='Klarinety' names={['Eva Nejedlá','Zdeněk Nejedlý']} id={4}activeKey={activeKey}/>
-          <CardCollapse title='Tuba' names={['Radoslav Tichý']} id={5} activeKey={activeKey} />
-          <CardCollapse title='Bicí' names={['František Nejedlý']} id={6} activeKey={activeKey} />
-          <CardCollapse title='Doprovodná sekce' names={['Lukáš Linhart','Pavel Kozák']} id={7} activeKey={activeKey} />
+          <CardCollapse title='Zpěvy' names={['Soňa Rifflerová','Markéta Tichá','Pavel Braun']} id={1} activeKey={activeKey} />
+          <CardCollapse title='Křídlovky' names={['Milan Novák','Pavel Braun','Tomáš Braun','Jiří Šimek']} id={2} activeKey={activeKey} />
+          <CardCollapse title='Tenor' names={['Jaroslava Jašková']} id={3} activeKey={activeKey} />
+          <CardCollapse title='Baryton' names={['Stanislav Veselý']} id={4} activeKey={activeKey} />
+          <CardCollapse title='Klarinety' names={['Eva Nejedlá','Zdeněk Nejedlý']} id={5}activeKey={activeKey}/>
+          <CardCollapse title='Tuba' names={['Radoslav Tichý']} id={6} activeKey={activeKey} />
+          <CardCollapse title='Bicí' names={['František Nejedlý']} id={7} activeKey={activeKey} />
+          <CardCollapse title='Doprovodná sekce' names={['Lukáš Linhart','Pavel Kozák']} id={8} activeKey={activeKey} />
         </Accordion>
       </div>
     </Col>

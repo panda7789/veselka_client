@@ -39,45 +39,45 @@ export default function Index() {
             vánočních pochůzkách kapela navštěvuje své příznivce a bývalé členy,
             kterým za zvuku koled zpříjemňuje Vánoční čas.
           </p>
-          <a data-fancybox="gallery" href="./galerie/uvod/1.jpg">
+          <a data-fancybox="gallery" href="https://losticka-veselka.s3.eu-central-1.amazonaws.com/1.jpg">
             <img
               className="thumb"
-              src="./galerie/uvod/1_tn.jpg"
+              src="https://losticka-veselka.s3.eu-central-1.amazonaws.com/1_tn.jpg"
               alt="veselka"
             />
           </a>
-          <a data-fancybox="gallery" href="./galerie/uvod/2.jpg">
+          <a data-fancybox="gallery" href="https://losticka-veselka.s3.eu-central-1.amazonaws.com/2.jpg">
             <img
               className="thumb"
-              src="./galerie/uvod/2_tn.jpg"
+              src="https://losticka-veselka.s3.eu-central-1.amazonaws.com/2_tn.jpg"
               alt="veselka"
             />
           </a>
-          <a data-fancybox="gallery" href="./galerie/uvod/3.jpg">
+          <a data-fancybox="gallery" href="https://losticka-veselka.s3.eu-central-1.amazonaws.com/3.jpg">
             <img
               className="thumb"
-              src="./galerie/uvod/3_tn.jpg"
+              src="https://losticka-veselka.s3.eu-central-1.amazonaws.com/3_tn.jpg"
               alt="veselka"
             />
           </a>
-          <a data-fancybox="gallery" href="./galerie/uvod/4.jpg">
+          <a data-fancybox="gallery" href="https://losticka-veselka.s3.eu-central-1.amazonaws.com/4.jpg">
             <img
               className="thumb"
-              src="./galerie/uvod/4_tn.jpg"
+              src="https://losticka-veselka.s3.eu-central-1.amazonaws.com/4_tn.jpg"
               alt="veselka"
             />
           </a>
-          <a data-fancybox="gallery" href="./galerie/uvod/5.jpg">
+          <a data-fancybox="gallery" href="https://losticka-veselka.s3.eu-central-1.amazonaws.com/5.jpg">
             <img
               className="thumb"
-              src="./galerie/uvod/5_tn.jpg"
+              src="https://losticka-veselka.s3.eu-central-1.amazonaws.com/5_tn.jpg"
               alt="veselka"
             />
           </a>
-          <a data-fancybox="gallery" href="./galerie/uvod/6.jpg">
+          <a data-fancybox="gallery" href="https://losticka-veselka.s3.eu-central-1.amazonaws.com/6.jpg">
             <img
               className="thumb"
-              src="./galerie/uvod/6_tn.jpg"
+              src="https://losticka-veselka.s3.eu-central-1.amazonaws.com/6_tn.jpg"
               alt="veselka"
             />
           </a>

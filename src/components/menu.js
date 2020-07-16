@@ -1,13 +1,12 @@
 import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Col, Nav, NavDropdown } from 'react-bootstrap';
+import { Col, Nav } from 'react-bootstrap';
 
 
 export default function Menu() {
     return (
         <Col style={{ padding_tom: "5px" }}>
-            <Nav variant="tabs"
-            >
+            <Nav variant="tabs">
                 <LinkContainer to="/pages/index">
                     <Nav.Item as={Nav.Link}>
                         Domů
@@ -28,11 +27,12 @@ export default function Menu() {
                         Obsazení
                     </Nav.Item>
                 </LinkContainer>
-                <NavDropdown title="Galerie">
-                        <NavDropdown.Item tag={LinkContainer} to={'/pages/index'}>Fotogalerie</NavDropdown.Item>
-                        <NavDropdown.Item tag={LinkContainer} to={'/pages/index'}>Videa</NavDropdown.Item>
-                </NavDropdown>
-                <LinkContainer to="/pages/index">
+                <LinkContainer to="/pages/fotogalerie">
+                    <Nav.Item as={Nav.Link}>
+                        Fotogalerie
+                    </Nav.Item>
+                </LinkContainer>
+                <LinkContainer to="/pages/kontakty">
                     <Nav.Item as={Nav.Link}>
                         Kontakty
                     </Nav.Item>

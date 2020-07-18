@@ -20,4 +20,4 @@ jobs:
           git pull origin master
           npm install --production
           npm run build
-          cp -rf build /var/www/new.lostickaveselka.cz/web
+          cp -rf build/ /var/www/new.lostickaveselka.cz/web

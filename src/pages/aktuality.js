@@ -17,7 +17,7 @@ export class Aktuality extends Component {
         fetch(api_url + '/api/aktuality')
             .then(res => res.json())
             .then((data) => {
-                this.setState({ aktuality: data });
+                this.setState({ aktuality: data.reverse() });
             })
             .catch(console.log)
     }

@@ -26,6 +26,7 @@ export class Fotogalerie extends Component {
                 this.setState({ images: data });
             })
             .catch(console.log)
+        this.setState({ offset: this.state.offset + this.state.limit });
     }
 
     getImages = (offset = null, limit = null, callback) => {

@@ -9,6 +9,8 @@ export class Kontakty extends Component {
                 <div className="content">
                 <h3 class={"display-4"}>Kontakty</h3>
                 <br></br>
+                <h3>Loštická Veselka z.s.</h3>
+                <br></br>
                 <Card style={{maxWidth: "540px"}}>
                     <Card.Body>
                         <Card.Title>Markéta Tichá - manager</Card.Title>

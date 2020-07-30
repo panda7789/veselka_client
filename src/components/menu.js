@@ -32,6 +32,11 @@ export default function Menu() {
                         Fotogalerie
                     </Nav.Item>
                 </LinkContainer>
+                <LinkContainer to="/pages/sponzori">
+                    <Nav.Item as={Nav.Link}>
+                        Sponzoři
+                    </Nav.Item>
+                </LinkContainer>
                 <LinkContainer to="/pages/kontakty">
                     <Nav.Item as={Nav.Link}>
                         Kontakty

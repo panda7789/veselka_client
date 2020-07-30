@@ -12,6 +12,7 @@ import { Akce } from '../pages/akce';
 import { Aktuality } from '../pages/aktuality';
 import { Fotogalerie } from '../pages/fotogalerie';
 import { Kontakty } from '../pages/kontakty';
+import Sponzori from '../pages/sponzori';
 
 class Content extends React.Component {
     render() {
@@ -36,6 +37,10 @@ class Content extends React.Component {
                 <Route path="/pages/fotogalerie">
                     <Helmet><title>Fotogalerie</title></Helmet>
                     <Fotogalerie />
+                </Route>
+                <Route path="/pages/sponzori">
+                    <Helmet><title>Sponzoři</title></Helmet>
+                    <Sponzori />
                 </Route>
                 <Route path="/pages/kontakty">
                     <Helmet><title>Kontakty</title></Helmet>

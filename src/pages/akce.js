@@ -22,7 +22,7 @@ export class Akce extends Component {
     parseDate(input){
         if (new Date(input).getFullYear() === 2000) {
             let datum = new Date(input).toLocaleDateString('cs-cz');
-            return ("??.".concat(datum.split('. ')[1].split('.')[0], '. ', new Date().getFullYear()));
+            return ("??. ".concat(datum.split('.')[1].split('.')[0], '. ', new Date().getFullYear()));
         }
         else {
             return (new Date(input).toLocaleDateString('cs-cz'));

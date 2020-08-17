@@ -19,6 +19,16 @@ export class Akce extends Component {
         .catch(console.log)
     }
 
+    parseDate(input){
+        if (new Date(input).getYear() === 2000) {
+            let datum = new Date(input).toLocaleDateString('cs-cz');
+            return ("??.".concat(datum.split('.')[1]));
+        }
+        else {
+            return (new Date(input).toLocaleDateString('cs-cz'));
+        }
+    }
+
     render() {
         return (
             <Col sm={8}>
@@ -36,7 +46,9 @@ export class Akce extends Component {
                         </thead>
                         { this.state.akce && this.state.akce.map((akc) => (
                         <tbody>
-                            <td>{new Date(akc.datum).toLocaleDateString('cs-cz')}</td>
+                            <td>{
+                                this.parseDate(akc.datum)
+                            }</td>
                             <td>{akc.nazev}</td>
                             <td>{akc.misto}</td>
                             <td>{akc.typ}</td>

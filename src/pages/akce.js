@@ -44,7 +44,29 @@ export class Akce extends Component {
                             <th>Typ akce</th>
                         </tr>
                         </thead>
-                        { this.state.akce && this.state.akce.map((akc) => (
+                        { this.state.akce && this.state.akce.filter((akce) => akce.datum >= new Date()).map((akc) => (
+                        <tbody>
+                            <td>{
+                                this.parseDate(akc.datum)
+                            }</td>
+                            <td>{akc.nazev}</td>
+                            <td>{akc.misto}</td>
+                            <td>{akc.typ}</td>
+                        </tbody>
+                        ))}
+                    </Table>
+                    <h3 class={"display-4"}>Proběhlé akce</h3>
+                    <br></br>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                            <th>Datum konání</th>
+                            <th>Název akce</th>
+                            <th>Místo konání</th>
+                            <th>Typ akce</th>
+                        </tr>
+                        </thead>
+                        { this.state.akce && this.state.akce.filter((akce) => akce.datum < new Date()).map((akc) => (
                         <tbody>
                             <td>{
                                 this.parseDate(akc.datum)

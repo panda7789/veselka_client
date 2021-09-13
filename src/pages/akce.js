@@ -44,7 +44,7 @@ export class Akce extends Component {
                             <th>Typ akce</th>
                         </tr>
                         </thead>
-                        { this.state.akce && this.state.akce.filter((akce) => akce.datum >= new Date()).map((akc) => (
+                        { this.state.akce && this.state.akce.filter((akce) => new Date(akce.datum) >= new Date()).map((akc) => (
                         <tbody>
                             <td>{
                                 this.parseDate(akc.datum)
@@ -66,7 +66,7 @@ export class Akce extends Component {
                             <th>Typ akce</th>
                         </tr>
                         </thead>
-                        { this.state.akce && this.state.akce.filter((akce) => akce.datum < new Date()).map((akc) => (
+                        { this.state.akce && this.state.akce.filter((akce) => new Date(akce.datum) < new Date()).map((akc) => (
                         <tbody>
                             <td>{
                                 this.parseDate(akc.datum)

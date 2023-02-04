@@ -99,7 +99,7 @@ class Images extends React.Component {
         let images = this.state.images.map(img => {
             return (
                 <a data-fancybox="gallery" href={img.url} key={img.url}>
-                    <img className={this.props.images.length > 1 ? "thumb" : "thumb-max mx-auto d-block"} src={img.urlThumbnail} alt={img.id} />
+                    <img loading="lazy" className={this.props.images.length > 1 ? "thumb" : "thumb-max mx-auto d-block"} src={img.urlThumbnail} alt={img.id} />
                 </a>
             )
         });

@@ -84,12 +84,12 @@ export default function Index() {
         </div> 
     </Col>
     <Col sm={8} lg={4}>
-      <div className="right">
+        <div className="right">
           <iframe
             title="facebook"
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLo%25C5%25A1tick%25C3%25A1-Veselka-111782970262375%2F&tabs=timeline%2Cevents&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1606107826281502"
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLo%25C5%25A1tick%25C3%25A1-Veselka-111782970262375%2Fline%2Cevents&width=340&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1606107826281502"
             id="facebook"
-            style={{border:'none', overflow:'hidden'}}
+            style={{border:'none', overflow:'hidden', height: 'auto'}}
             scrolling="no"
             frameBorder="0"
             allow="encrypted-media"

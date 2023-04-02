@@ -7,8 +7,8 @@ html { margin-left: calc(100vw - 100%); }
 	height:100px;
 	width:100%;
 	background:
-	linear-gradient(rgba(156, 154, 254, 0), rgba(156, 154, 254, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 255, 255, 1)), url(https://losticka-veselka.s3.eu-central-1.amazonaws.com/head.jpg);
-	background-size: contain;
+	linear-gradient(rgba(156, 154, 254, 0), rgba(156, 154, 254, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 255, 255, 1)), url(/images/header4.jpg);
+	background-size: cover;
 	background-repeat: no-repeat;
  }
  
@@ -38,19 +38,29 @@ html { margin-left: calc(100vw - 100%); }
 	 padding-top :50px;
  }
 
+ .nav-link {
+	color: #F6B247;
+ }
+
  .nadpis {
-	font-family: 'Passion One', cursive;
-	font-size: 40px;
-	color: white;	
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size: 115px;
+	color: #F6B247;	
 	letter-spacing: 1px;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #008cff;
+	-webkit-text-stroke-width: 1.5px !important;
+	-webkit-text-stroke-color: black;
 	  position:absolute;
 	  bottom:0px;
 	  left: 0; 
 	  right: 0; 
 	  margin-left: auto; 
 	  margin-right: auto; 
+ }
+
+ .btn-primary {
+	background-color: #F6B247 !important;
+	border-color: black !important;
  }
 
  .article {
@@ -63,6 +73,11 @@ html { margin-left: calc(100vw - 100%); }
 
  h3 .display-4 {
 	 font-size:10px !important;
+ }
+
+ .display-4 {
+	font-family: 'Dancing Script', cursive;
+
  }
 
  .article-images {
@@ -104,15 +119,6 @@ html { margin-left: calc(100vw - 100%); }
 	padding-top:0px;
 }
 
-.obsazeni-a{
-	color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-}
-.obsazeni-a:hover{
-	color: #0056b3;
-    text-decoration: underline;
-}
 .expandGalleryButton {
 	float: right;
 	margin: 20px;
@@ -125,13 +131,11 @@ html { margin-left: calc(100vw - 100%); }
 		border-radius: 10px;
 	}
 	.nadpis {
-		font-size: 90px;
 		  bottom:-38px;
 		  left: 0; 
 		  right: 0; 
 		  margin-left: auto;
 		  margin-right: auto;
-		  -webkit-text-stroke-width: 3px;
 	 }
 	 .content {
 		padding: 50px;

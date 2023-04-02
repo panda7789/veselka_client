@@ -21,7 +21,7 @@ export interface Props {
 
 export function MyCarousel({ items }: Props) {
   return (
-    <Carousel navButtonsAlwaysVisible autoPlay={false}>
+    <Carousel navButtonsAlwaysVisible>
       {items.map((item, i) => (
         <Card key={item.image} elevation={0} sx={{ position: 'relative' }}>
           <a href={item.linkTo ?? undefined} style={{ textDecoration: "none" }}>

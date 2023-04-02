@@ -36,7 +36,7 @@ export function MyCarousel({ items }: Props) {
               {item.name && item.description && (
                 <CardContent sx={{position: 'absolute', bottom: 0, padding: '8px', paddingLeft: '10%', width: '100%', backgroundColor: '#ffffffAA', color: 'black !important'}}>
                   <h1 style={{fontFamily: 'Dancing Script'}}>{item?.name}</h1>
-                  <p style={{textOverflow: 'ellipsis'}}>{item?.description}</p>
+                  <p style={{textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden'}}>{item?.description}</p>
                 </CardContent>
               )}
             </CardActionArea>

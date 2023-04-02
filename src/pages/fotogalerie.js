@@ -71,7 +71,7 @@ export class Fotogalerie extends Component {
                             )
                         )
                     }
-                    <Button variant="success" size="sm" onClick={this.loadNext} block>
+                    <Button variant="primary" size="sm" onClick={this.loadNext} block>
                         Načíst další
                     </Button>
                 </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
 import { ArrowsAngleExpand, ArrowsAngleContract } from 'react-bootstrap-icons';
 import htmlParse from 'html-react-parser';
+import {Typography} from "@mui/material";
 
 var api_url = process.env.REACT_APP_API_URL;
 
@@ -27,7 +28,6 @@ export class Aktuality extends Component {
             <>
                 <Col sm={8}>
                     <div className="content">
-                        <h3 className={"display-4"}>Aktuality</h3>
                         {
                             this.state.aktuality && this.state.aktuality.map(x => { return <Aktualita key={x.title} title={x.title} text={x.text} images={x.images} /> })
                         }
@@ -57,7 +57,7 @@ class Aktualita extends Component {
             <Row>
                 <Col sm={12} className={"article"}>
                     <div className="article-header">
-                        <h3>{this.props.title}</h3>
+                        <Typography variant='h3' fontFamily={'Dancing Script'}>{this.props.title}</Typography>
                         <hr />
                     </div>
                     <div className="article-content">

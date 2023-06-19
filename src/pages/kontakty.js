@@ -13,23 +13,10 @@ export class Kontakty extends Component {
                 <br></br>
                 <Card style={{maxWidth: "540px"}}>
                     <Card.Body>
-                        <Card.Title>Markéta Tichá - manager</Card.Title>
+                        <Card.Title>Markéta Tichá</Card.Title>
                         <Card.Text>
                             Email: losticka.veselka@seznam.cz<br />
                             Mobil: 720 974 169
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <br/>
-                <Card style={{maxWidth: "540px"}}>
-                    <Card.Body>
-                        <Card.Title>Stanislav Veselý</Card.Title>
-                        <Card.Text>
-                            Loštice, Palackého 274<br />
-                            789 83<br /><br />
-                            Email: piskalek@volny.cz <br />
-                            Telefon: 583 445 532 <br />
-                            Mobil: 602 544 253
                         </Card.Text>
                     </Card.Body>
                 </Card>
